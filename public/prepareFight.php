@@ -34,7 +34,9 @@ session_start();
     <!-- <div class="hero-description">
       <p>Le héros est un combattant aguerri, maîtrisant des techniques redoutables. Son arme favorite est la "Lame du Dragon".</p>
     </div> -->
+    <a href="">
     <button class="fight-button">Combattre</button>
+    </a>
   </div>
 </article>
 
