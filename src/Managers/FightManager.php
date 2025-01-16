@@ -14,7 +14,9 @@ public function __construct()
 }
 
 
-// créer une fonction qui va générer le combatn (faire cette fonction a la fin quand j'ai tout)
+
+
+// créer une fonction qui va générer le combat (faire cette fonction a la fin quand j'ai tout)
 
 // faire la fonction combat sans js pour l'instant en full php
 
