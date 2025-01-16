@@ -16,9 +16,9 @@ if(!$hero){
     $hero = new Hero(0, $_POST['prenom']);
 
     $heroRepository->createHero($hero);
-    $user = $heroRepository->findByPrenom($_POST['prenom']);
+    $hero = $heroRepository->findByPrenom($_POST['prenom']);
 }
 
-$_SESSION['user'] = $user;
+$_SESSION['hero'] = $hero;
 
 header("Location: ../public/prepareFight.php");

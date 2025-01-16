@@ -3,7 +3,7 @@
 
 session_start();
 
-if (isset($_SESSION['user']) && !empty($_SESSION['user'])) {
+if (isset($_SESSION['hero']) && !empty($_SESSION['hero'])) {
     header('Location: ./prepareFight.php');
     exit;
 }
