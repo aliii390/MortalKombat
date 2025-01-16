@@ -30,10 +30,12 @@ class HeroRepository extends AbstractRepository
 
     public function createHero(Hero $hero): void
     {
-        $stmt = $this->pdo->prepare("INSERT INTO hero (prenom, point_vie) VALUES (:prenom, :point_vie)");
+        $stmt = $this->pdo->prepare("INSERT INTO hero (prenom, point_vie , attack , endurance ) VALUES (:prenom, :point_vie, :attack, :endurance)");
         $stmt->execute([
             'prenom' => $hero->getPrenom(),
-            ':point_vie' => $hero->getPointDeVie()
+            ':point_vie' => $hero->getPointDeVie(),
+            'attack'=> $hero->getAttack(),
+            'endurance'=> $hero->getEndurance()
         ]);
     }
 }

@@ -7,7 +7,9 @@ class HeroMapper implements MapperContract{
         return new Hero(
             $heroData['id'],
             $heroData['prenom'],
-            $heroData['point_vie']
+            $heroData['point_vie'],
+            $heroData['attack'],
+            $heroData['endurance']
         );
     }
 }
