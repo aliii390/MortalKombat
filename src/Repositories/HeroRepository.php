@@ -35,7 +35,7 @@ class HeroRepository extends AbstractRepository
             'prenom' => $hero->getPrenom(),
             ':point_vie' => $hero->getPointDeVie(),
             'attack'=> $hero->getAttack(),
-            'endurance'=> $hero->getEndurance()
+            'endurance'=> $hero->getEndurance(),
         ]);
     }
 }

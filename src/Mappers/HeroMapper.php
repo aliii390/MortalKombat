@@ -9,7 +9,8 @@ class HeroMapper implements MapperContract{
             $heroData['prenom'],
             $heroData['point_vie'],
             $heroData['attack'],
-            $heroData['endurance']
+            $heroData['endurance'],
+           
         );
     }
 }
