@@ -33,6 +33,7 @@ if (isset($_SESSION['hero']) && !empty($_SESSION['hero'])) {
 </header>
     
 <main>
+    <img class="hero-image" src="./assets/img/hero.png" alt="">
     <section class="form-section">
         <h2>Créez votre personnage</h2>
         <form class="character-form" action="../process/createPerso-process.php" method="POST">
@@ -43,11 +44,25 @@ if (isset($_SESSION['hero']) && !empty($_SESSION['hero'])) {
                 name="prenom" 
                 placeholder="Créer ton perso" 
                 required>
+                
+                <label for="genre">homme ou femme</label>
+               <input type="text"
+               type="text"
+               id="genre"
+               name="genre"
+               placeholder="Entre ton genre"
+               
+               
+               >
             
             <button type="submit">Créer</button>
         </form>
     </section>
+
+    <!-- Ajout de la classe 'hero-image' -->
+    <img src="./assets/img/monstre.png" alt="Personnage" class="hero-image">
 </main>
+
 
 </body>
 </html>

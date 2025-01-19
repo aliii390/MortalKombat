@@ -108,3 +108,24 @@ h1 {
     outline: none;
     box-shadow: 0 0 10px #ffbf00;
 }
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+ .hero-image {
+    width: 300px;
+    height: auto;
+
+}
+
+/* Animation automatique */
+/* .hero-image:hover {
+    transform: scale(1.05);
+    filter: grayscale(0%) brightness(100%);
+}  */

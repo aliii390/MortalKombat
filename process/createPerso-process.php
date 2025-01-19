@@ -13,7 +13,7 @@ $hero = $heroRepository->findByPrenom($_POST['prenom']);
 
 
 if(!$hero){
-    $hero = new Hero(0, $_POST['prenom']);
+    $hero = new Hero(0, $_POST['prenom'] , $_POST['genre']);
 
     $heroRepository->createHero($hero);
     $hero = $heroRepository->findByPrenom($_POST['prenom']);
